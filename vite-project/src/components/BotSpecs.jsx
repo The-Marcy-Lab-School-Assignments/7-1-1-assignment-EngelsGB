@@ -14,7 +14,7 @@ const BotSpecs = () => {
   // TIP: remember that the `id` from the URL is a string
   // here we are hard-coding the id. How can you get it from the URL?
 
-  const { id } = useParams()
+  const { id } = useParams();
   
   const bot = robots.find((robot) => robot.id === id)
   if (!bot) return <NotFoundPage />
